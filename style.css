@@ -217,7 +217,7 @@ strong {
 
 
 /* MOBILE */
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 46em) {
   .container {
     display: flex;
     flex-direction: column;
@@ -235,14 +235,14 @@ strong {
   }
 
   .box {
-    width: 375px;
+    width: 46em;
     height: auto;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
   }
 
   .box-rectangle {
-    width: 375px;
+    width: 46em;
     box-shadow: none;
   }
 
@@ -250,6 +250,7 @@ strong {
     border-color: hsl(252, 100%, 67%);
     background-color: hsl(224, 30%, 27%);
     color: white;
+    padding: 2rem;
   }
 }
 
