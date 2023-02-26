@@ -235,14 +235,14 @@ strong {
   }
 
   .box {
-    width: 46em;
+    max-width: 630px;
     height: auto;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
   }
 
   .box-rectangle {
-    width: 46em;
+    max-width: 630px;
     box-shadow: none;
   }
 
@@ -250,7 +250,7 @@ strong {
     border-color: hsl(252, 100%, 67%);
     background-color: hsl(224, 30%, 27%);
     color: white;
-    padding: 2rem;
+    padding: 1rem;
   }
 }
 
