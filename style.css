@@ -217,7 +217,7 @@ strong {
 
 
 /* MOBILE */
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 46em) {
   .container {
     display: flex;
     flex-direction: column;
