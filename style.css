@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  margin-block-start: 150px;
+}
+
+.box {
+  border: none;
+  border-radius: 18px;
+  width: 260px;
+  height: 358px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 5px hsla(241, 100%, 89%, 0.253);
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  margin-right: 0;
+  z-index: 1;
+}
+
+.box-rectangle {
+  border: none;
+  width: 270px;
+  height: 358px;
+  padding-left: 3rem;
+  padding-right: 2rem;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 25px hsla(241, 100%, 89%, 0.575);
+  margin-left: -1rem;
+  border-bottom-right-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+.circle {
+  margin-bottom: 1.5rem;
+  border: 1px solid transparent;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 11%;
+  padding-right: 11%;
+  border-radius: 68%;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+}
+
+.re-size {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1;
+}
+
+.color {
+  font-size: 13px;
+  text-align: center;
+  color: hsl(241, 100%, 89%);
+}
+
+.adjust {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 15px;
+  font-weight: 700;
+  color: hsl(241, 100%, 89%);
+}
+
+.font-resize {
+  font-weight: 500;
+  text-align: center;
+  font-size: 13px;
+  word-spacing: 1px;
+  color: hsl(241, 100%, 89%);
+}
+
+.reaction {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 87, 87, 0.068);
+}
+
+.memory {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 177, 31, 0.068);
+}
+
+.verbal {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(166, 100%, 37%, 0.068);
+}
+
+.visual {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(234, 85%, 45%, 0.068);
+}
+
+.smaller-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.merge {
+  color: hsl(0, 100%, 67%);
+  font-size: 13px;
+  font-weight: 550;
+  margin-left: 5px;
+  margin-right: auto;
+}
+
+.second-merge {
+  color: hsl(39, 100%, 56%);
+  font-size: 13px;
+  font-weight: 550;
+  margin-left: 5px;
+  margin-right: auto;
+}
+
+.third-merge {
+  color: hsl(166, 100%, 37%);
+  font-size: 13px;
+  font-weight: 550;
+  margin-left: 5px;
+  margin-right: auto;
+}
+
+.fourth-merge {
+  color: hsl(234, 85%, 45%);
+  font-size: 13px;
+  font-weight: 550;
+  margin-left: 5px;
+  margin-right: auto;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  color: hsl(0, 0%, 100%);
+}
+
+h3 {
+  padding-bottom: 1.1em;
+  font-size: 16px;
+}
+
+span {
+  color: hsl(241, 100%, 89%);
+  font-size: 13px;
+}
+
+strong {
+  font-size: 13px;
+}
+
+#continue {
+  border: none;
+  border-radius: 24px;
+  margin-top: 25px;
+  padding: 1.2em;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+#continue:hover:focus {
+  cursor: pointer;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+/* MOBILE */
+@media screen and (max-width: 576px) {
+  body {
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .box {
+    width: 100%;
+    height: 50%;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .adjust {
+    font-size: 17px;
+  }
+
+  .font-resize {
+    font-size: 15px;
+    padding-bottom: 2.3em;
+  }
+
+  .box-rectangle {
+    width: 100%;
+    box-shadow: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-left: 2.3rem;
+    padding-right: 0.5rem;
+  }
+
+  .reaction,
+  .memory,
+  .verbal,
+  .visual {
+    padding: 12px;
+  }
+
+  .smaller-box {
+    gap: 1em;
+  }
+
+  h3 {
+    padding-bottom: 1.2rem;
+    font-weight: 600;
+  }
+
+  strong,
+  span {
+    font-size: 18px;
+  }
+
+  .merge,
+  .second-merge,
+  .third-merge,
+  .fourth-merge {
+    font-size: 18px;
+  }
+
+  #continue {
+    border-color: hsl(252, 100%, 67%);
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    padding: 1rem;
+    font-size: 15px;
+    font-weight: 548;
+  }
+}
